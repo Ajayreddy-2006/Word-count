@@ -19,8 +19,8 @@ Now give print().
 End the program.
 ## PROGRAM:
 ```
-Developed by:T.Thrishendra
-ref.no:23003501
+Developed by:T.Ajay
+ref.no:23007325
 num=0
 with open("file1.txt","r") as f1:
     for i in f1:
