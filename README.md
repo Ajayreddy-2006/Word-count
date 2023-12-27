@@ -1,49 +1,38 @@
-# command-line-arguments-to-count-word
+# Word-count
 ## AIM:
-To write a python program for getting the word count from the contents of a file using command line arguments.
+To write a python program for getting the word count from a text.
 ## EQUIPEMENT'S REQUIRED: 
 PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-import sys module to use the command line arguments 
+Open file in read mode.
 ### Step 2: 
-Use the open() function to get the file name from the command line arguments.
-
-sys.argv[1] refers to the first command line argument (file name).
+Read the text using read funcion.
 ### Step 3: 
-Iterate through the content of the file using a for loop.
+Split the text using space separator.
 ### Step 4:  
-Split the contents into each line using .split() function.
+The length of the split list should be equal to the number of words in the text file.
 ### Step 5: 
-Iterate the list of lines and increment the value of variable (word) each time.
-
+Now give print().
 ### Step 6: 
-Run the program to determine the number of words in the file created.
-
+End the program.
 ## PROGRAM:
-```python
-'''Program for getting the word count from the contents of a file using command line arguments
-Developed by: T.Ajay
-Reference number: 212223230007
-''''
-import sys
-count = {}
-total_count = 0
-with open(sys.argv[1], 'r') as f:
-    for line in f:
-        for word in line.split():
-            if word not in count:
-                count[word] = 1
-            else:
-                count[word] += 1
-            total_count += 1
-print(count)
-print(f"\nTotal word count: {total_count}")
+```
 
+Developed by:T.Ajay
+ref.no:212223230007
+num=0
+with open("file1.txt","r") as f1:
+    for i in f1:
+        word=i.split()
+        num += len(word)
+print("The number of words are in the file is ",num)
 ```
 ### OUTPUT:
-![Screenshot 2023-12-27 173957](https://github.com/Ajayreddy-2006/Word-count/assets/145742508/8a2361b8-04aa-4908-8474-6c588ab40423)
+![image](https://user-images.githubusercontent.com/119389139/214846483-3bfbb332-b6b6-4a2c-8ac9-9e05350a1d96.png)
+
 
 ## RESULT:
-Thus the program is written to find the word count from the contents of a file using command line arguments.
+Thus the program is written to find the word count from a text.
+
