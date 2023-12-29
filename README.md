@@ -20,17 +20,18 @@ End the program.
 ## PROGRAM:
 ```
 
-Developed by:T.Ajay
-ref.no:212223230007
+#Program to find count words in a file
+#Developed by:T.Ajay
+#ref.no:212223230007
 num=0
 with open("file1.txt","r") as f1:
     for i in f1:
         word=i.split()
         num += len(word)
-print("The number of words are in the file is ",num)
+print("The counts of word in the file is ",num)
 ```
 ### OUTPUT:
-![image](https://user-images.githubusercontent.com/119389139/214846483-3bfbb332-b6b6-4a2c-8ac9-9e05350a1d96.png)
+![image](https://github.com/Ajayreddy-2006/Word-count/assets/145742508/bb26ab29-3dd4-4f54-b3a7-05f0f4c6bd23)
 
 
 ## RESULT:
